@@ -1,6 +1,14 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class View {
+    public void listarAnimal(ArrayList<Animal> animalList){
+        System.out.println("Listar Animais");
+        int i=0;
+        for(Animal a:animalList){
+            System.out.println(i + " - " +a.toString());i++;
+        }
+    }
     public Animal cadastrarAnimal(){
         Animal a =null;
         Scanner sc = new Scanner(System.in);
@@ -30,6 +38,7 @@ public class View {
                 break;
             case 2:
                 a = new Passaro(nome,patas,velocidade,localizacao);
+                break;
             case 3:
                 int agua;
                 System.out.println("Tipo de agua:"

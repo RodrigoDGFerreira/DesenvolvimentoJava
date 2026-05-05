@@ -23,10 +23,7 @@ public class Main{
                     System.out.println("Temos " + animaisList.size() + " animais cadastrados!");
                     break;
                 case 2:
-                    System.out.println("Listar Animais");
-                    for(Animal asd: animaisList){
-                        System.out.println(asd.toString());
-                    }
+                    v.listarAnimal(animaisList);
                     break;
                 case 3:{
                     System.out.println("Mover Animal");
